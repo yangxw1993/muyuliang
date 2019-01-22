@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+<button wx:if="{{!userInfo.avatarUrl}}" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">获取头像</button>
+  <view class='avatar' wx:if="{{userInfo.avatarUrl}}">
+    <image src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+  </view>
+  <view class="desc"><text wx:if="{{userInfo.nickName}}">{{userInfo.nickName}},</text>欢迎使用沐浴梁小程序，我们会持续更新完善小程序，敬请期待。</view>
+<view class='flex-arount btn-wrapper'>
+  <button type='primary' open-type="contact">联系客服</button>
+  <button type='primary' open-type="share">分享好友</button>
+</view>
+</view>

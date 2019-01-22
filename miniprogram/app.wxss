@@ -1,0 +1,31 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+image{
+  display: block;
+  width: 100%;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.flex-bet{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-arount{
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+.flex-arount{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
