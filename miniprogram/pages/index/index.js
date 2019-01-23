@@ -7,7 +7,19 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+    swiper:{
+      list:[
+        {picUrl: '../../images/swiper1.jpg'},
+        {picUrl: '../../images/swiper2.jpg'},
+        {picUrl: '../../images/swiper3.jpg'}
+      ],
+      indicatorDots: true,
+      autoplay: true,
+      circular: true,
+      interval: 3000,
+      duration: 500,
+    }
   },
 
   onLoad: function() {
